@@ -1,116 +1,136 @@
           /* Reset de margens e padding para garantir consistência */
-* {
-    /* Aplica as regras a todos os elementos */
-    margin: 0; /* Remove a margem padrão de todos os elementos */
-    padding: 0;  /* Remove o padding padrão de todos os elementos */
-    box-sizing: border-box; /* Inclui bordas e padding no cálculo total do tamanho do elemento*/
-}
+		  * {
+			/* Aplica as regras a todos os elementos */
+			margin: 0; /* Remove a margem padrão de todos os elementos */
+			padding: 0;  /* Remove o padding padrão de todos os elementos */
+			box-sizing: border-box; /* Inclui bordas e padding no cálculo total do tamanho do elemento*/
+		}
+		
+		/* Configurações de corpo da página */
+		body {
+			font-family: Arial, sans-serif; /* Define a fonte do texto */
+			color: #2F4F4F; /* Define a cor do texto */
+			background-color: #E8E8E8; /* Define a cor do fundo */
+			padding: 10px; /*Adiciona espaço interno (padding) ao redor do conteúdo do corpo*/
+		}
+		
+		/* Configurações do Cabeçalho */
+		header {
+			display: flex; /* Usa o layout flexível para organizar os elementos do cabeçalho */
+			justify-content: space-between; /* Coloca os itens do cabeçalho o mais distante possível entre si */
+			align-items: center; /* Alinha verticalmente os itens do cabeçalho no centro */
+			padding: 20px; /* Adiciona 20px de padding acima e abaixo */
+			background-color: #F5F5F5; /* Define a cor do fundo do cabeçalho */
+		}
+		
+		img{
+			width: 110px; /* Ajusta a largura da imagem da logo */
+			height: 110px; /* Ajusta a largura da imagem da logo */
+		}
+		
+		/* Barra de navegação */
+		nav a {
+			/* Sem vírgula, pega os elementos de "a" dentro de "nav" (hierarquia) */
+			margin: 0 15px; /* Adiciona 15px de margem à esquerda e à direita de cada link */
+			text-decoration: none; /* Remove o sublinhado dos links */
+			color: #2F4F4F; /* Define a cor do texto dos links*/
+			font-size: 18px; /* Define o tamanho da fonte dos links*/
+		}
+		
+		/* Links com hover */
+		nav a:hover {
+			color: #FF8C00; /* Muda a cor do link quando o mouse passa por cima */
+		}
+		
+		/* Redes sociais */
+		.redes-sociais ul {
+			/* Com "." na frente, define uma classe */
+			list-style: none; /* Remove os marcadores de lista (bullets) */
+			display: flex; /* Alinha os itens da lista horizontalmente */
+		}
+		
+		.redes-sociais ul li {
+			margin-left: 15px; /* Adiciona 15px de margem à esquerda de cada item da lista */
+		}
+		
+		.redes-sociais ul li a img {
+			width: 24px; /* Largura dos ícones das redes sociais */
+			height: 24px; /* Altura dos ícones das redes sociais */
+		}
 
-/* Configurações de corpo da página */
-body {
-    font-family: Arial, sans-serif; /* Define a fonte do texto */
-    color: #2F4F4F; /* Define a cor do texto */
-    background-color: #E8E8E8; /* Define a cor do fundo */
-    padding: 10px; /*Adiciona espaço interno (padding) ao redor do conteúdo do corpo*/
-}
+		.redes-sociais img:hover {
+			transform: scale(1.2); /* Adiciona um efeito às imagens ao passar o mouse por cima */
+		}
+		
+		/*Barra de Pesquisa*/
+		input {
+			border: 1px solid; /* Adiciona uma borda ao redor do campo de entrada */
+			border-radius: 5px; /* Arredonda os cantos do campo de entrada */
+		}
+		
+		footer {
+			color:white; /* Define a cor do texto no rodapé */
+			background-color: rgb(62, 90, 69); /* Define a cor de fundo do rodapé */
+		}
+		
+		.footer-list{
+			list-style: none; /* Altera os marcadores de lista */
+			padding: 0; /* Altera o padding (espaço interno) da lista */
+			margin: 0; /* Altera a margem da lista */
+		}
 
-/* Configurações do Cabeçalho */
-header {
-    display: flex; /* Usa o layout flexível para organizar os elementos do cabeçalho */
-    justify-content: space-between; /* Coloca os itens do cabeçalho o mais distante possível entre si */
-    align-items: center; /* Alinha verticalmente os itens do cabeçalho no centro */
-    padding: 20px; /* Adiciona 20px de padding acima e abaixo */
-    background-color: #F5F5F5; /* Define a cor do fundo do cabeçalho */
-}
+		#footer-redes-sociais {
+			display: flex;
+			justify-content: center;
+			text-align: center;
+		}
 
-img{
-    width: 110px; /* Ajusta a largura da imagem da logo */
-    height: 110px; /* Ajusta a largura da imagem da logo */
-}
+		.footer-list img {
+			margin-top: 3.5px;
+			width: 24px;
+			height: 24px;
+		}
 
-/* Barra de navegação */
-nav a {
-    /* Sem vírgula, pega os elementos de "a" dentro de "nav" (hierarquia) */
-    margin: 0 15px; /* Adiciona 15px de margem à esquerda e à direita de cada link */
-    text-decoration: none; /* Remove o sublinhado dos links */
-    color: #2F4F4F; /* Define a cor do texto dos links*/
-    font-size: 18px; /* Define o tamanho da fonte dos links*/
-}
-
-/* Links com hover */
-nav a:hover {
-    color: #FF8C00; /* Muda a cor do link quando o mouse passa por cima */
-}
-
-/* Redes sociais */
-.redes-sociais ul {
-    /* Com "." na frente, define uma classe */
-    list-style: none; /* Remove os marcadores de lista (bullets) */
-    display: flex; /* Alinha os itens da lista horizontalmente */
-}
-
-.redes-sociais ul li {
-    margin-left: 15px; /* Adiciona 15px de margem à esquerda de cada item da lista */
-}
-
-.redes-sociais ul li a img {
-    width: 30px; /* Largura dos ícones das redes sociais */
-    height: 30px; /* Altura dos ícones das redes sociais */
-}
-
-/*Barra de Pesquisa*/
-input {
-    border: 1px solid; /* Adiciona uma borda ao redor do campo de entrada */
-    border-radius: 5px; /* Arredonda os cantos do campo de entrada */
-}
-
-footer {
-    color:white; /* Define a cor do texto no rodapé */
-    background-color: rgb(62, 90, 69); /* Define a cor de fundo do rodapé */
-}
-
-.footer-list{
-    list-style: none; /* Altera os marcadores de lista */
-    padding: 0; /* Altera o padding (espaço interno) da lista */
-    margin: 0; /* Altera a margem da lista */
-}
-
-#footer-content {
-    /* Com "#" na frente, define um id */
-    display: flex; /* Organiza os blocos no rodapé em um layout flexível */
-    justify-content: space-between; /* Espaço entre os blocos */
-    align-items: flex-start; /* Alinhamento dos blocos no topo */
-    padding: 20px; /* Espaçamento interno, opcional */
-}
-
-#footer-nav, #footer-contato, #footer-redes-sociais {
-    /* Com vírgula, é usado quando você quer aplicar o mesmo estilo a múltiplos elementos diferentes*/
-    flex: 1; /* Faz com que cada bloco ocupe espaço igual */
-    margin: 0 20px; /* Espaçamento entre os blocos */
-}
-
-a{
-    color:white /*  Altera a cor */
-}
-
-#copyright{
-    text-align: center; /* Alinha os textos de copyright */
-}
-
-a{
-    text-decoration: none; /* Remove o sublinhado de todos os links */
-}
-
-/*Botão de Buscar*/
-button{
-    border: 1px solid; /* Adiciona uma borda ao botão */
-    border-radius: 5px; /* Arredonda os cantos do botão */
-    background-color: white; /* Define a cor de fundo do botão como branco */
-}
-button:hover{
-    color: #FF8C00; /* Muda a cor do texto do botão para laranja escuro quando o mouse passa por cima */
-}
-
-a:hover{
-    color: #FF8C00; /* Muda a cor do texto dos links para laranja escuro quando o mouse passa por cima */
-}
+		.footer-list img:hover {
+			transform: scale(1.2);
+		}
+		
+		#footer-content {
+			/* Com "#" na frente, define um id */
+			display: flex; /* Organiza os blocos no rodapé em um layout flexível */
+			justify-content: space-between; /* Espaço entre os blocos */
+			align-items: flex-start; /* Alinhamento dos blocos no topo */
+			padding: 20px; /* Espaçamento interno, opcional */
+		}
+		
+		#footer-nav, #footer-contato, #footer-redes-sociais {
+			/* Com vírgula, é usado quando você quer aplicar o mesmo estilo a múltiplos elementos diferentes*/
+			flex: 1; /* Faz com que cada bloco ocupe espaço igual */
+			margin: 0 20px; /* Espaçamento entre os blocos */
+		}
+		
+		a{
+			color:white /*  Altera a cor */
+		}
+		
+		#copyright{
+			text-align: center; /* Alinha os textos de copyright */
+		}
+		
+		a{
+			text-decoration: none; /* Remove o sublinhado de todos os links */
+		}
+		
+		/*Botão de Buscar*/
+		button{
+			border: 1px solid; /* Adiciona uma borda ao botão */
+			border-radius: 5px; /* Arredonda os cantos do botão */
+			background-color: white; /* Define a cor de fundo do botão como branco */
+		}
+		button:hover{
+			color: #FF8C00; /* Muda a cor do texto do botão para laranja escuro quando o mouse passa por cima */
+		}
+		
+		a:hover{
+			color: #FF8C00; /* Muda a cor do texto dos links para laranja escuro quando o mouse passa por cima */
+		}
