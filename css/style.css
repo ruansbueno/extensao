@@ -1,136 +1,229 @@
           /* Reset de margens e padding para garantir consistência */
-		  * {
-			/* Aplica as regras a todos os elementos */
-			margin: 0; /* Remove a margem padrão de todos os elementos */
-			padding: 0;  /* Remove o padding padrão de todos os elementos */
-			box-sizing: border-box; /* Inclui bordas e padding no cálculo total do tamanho do elemento*/
-		}
-		
-		/* Configurações de corpo da página */
-		body {
-			font-family: Arial, sans-serif; /* Define a fonte do texto */
-			color: #2F4F4F; /* Define a cor do texto */
-			background-color: #E8E8E8; /* Define a cor do fundo */
-			padding: 10px; /*Adiciona espaço interno (padding) ao redor do conteúdo do corpo*/
-		}
-		
-		/* Configurações do Cabeçalho */
-		header {
-			display: flex; /* Usa o layout flexível para organizar os elementos do cabeçalho */
-			justify-content: space-between; /* Coloca os itens do cabeçalho o mais distante possível entre si */
-			align-items: center; /* Alinha verticalmente os itens do cabeçalho no centro */
-			padding: 20px; /* Adiciona 20px de padding acima e abaixo */
-			background-color: #F5F5F5; /* Define a cor do fundo do cabeçalho */
-		}
-		
-		img{
-			width: 110px; /* Ajusta a largura da imagem da logo */
-			height: 110px; /* Ajusta a largura da imagem da logo */
-		}
-		
-		/* Barra de navegação */
-		nav a {
-			/* Sem vírgula, pega os elementos de "a" dentro de "nav" (hierarquia) */
-			margin: 0 15px; /* Adiciona 15px de margem à esquerda e à direita de cada link */
-			text-decoration: none; /* Remove o sublinhado dos links */
-			color: #2F4F4F; /* Define a cor do texto dos links*/
-			font-size: 18px; /* Define o tamanho da fonte dos links*/
-		}
-		
-		/* Links com hover */
-		nav a:hover {
-			color: #FF8C00; /* Muda a cor do link quando o mouse passa por cima */
-		}
-		
-		/* Redes sociais */
-		.redes-sociais ul {
-			/* Com "." na frente, define uma classe */
-			list-style: none; /* Remove os marcadores de lista (bullets) */
-			display: flex; /* Alinha os itens da lista horizontalmente */
-		}
-		
-		.redes-sociais ul li {
-			margin-left: 15px; /* Adiciona 15px de margem à esquerda de cada item da lista */
-		}
-		
-		.redes-sociais ul li a img {
-			width: 24px; /* Largura dos ícones das redes sociais */
-			height: 24px; /* Altura dos ícones das redes sociais */
-		}
+* {
+    /* Aplica as regras a todos os elementos */
+    margin: 0; /* Remove a margem padrão de todos os elementos */
+    padding: 0;  /* Remove o padding padrão de todos os elementos */
+    box-sizing: border-box; /* Inclui bordas e padding no cálculo total do tamanho do elemento*/
+}
 
-		.redes-sociais img:hover {
-			transform: scale(1.2); /* Adiciona um efeito às imagens ao passar o mouse por cima */
-		}
-		
-		/*Barra de Pesquisa*/
-		input {
-			border: 1px solid; /* Adiciona uma borda ao redor do campo de entrada */
-			border-radius: 5px; /* Arredonda os cantos do campo de entrada */
-		}
-		
-		footer {
-			color:white; /* Define a cor do texto no rodapé */
-			background-color: rgb(62, 90, 69); /* Define a cor de fundo do rodapé */
-		}
-		
-		.footer-list{
-			list-style: none; /* Altera os marcadores de lista */
-			padding: 0; /* Altera o padding (espaço interno) da lista */
-			margin: 0; /* Altera a margem da lista */
-		}
+/* Configurações de corpo da página */
+body {
+    font-family: Arial, sans-serif; /* Define a fonte do texto */
+    color: #2F4F4F; /* Define a cor do texto */
+    background-color: #E8E8E8; /* Define a cor do fundo */
+    padding: 10px; /*Adiciona espaço interno (padding) ao redor do conteúdo do corpo*/
+}
 
-		#footer-redes-sociais {
-			display: flex;
-			justify-content: center;
-			text-align: center;
-		}
+/* Configurações de corpo da página, apenas para main (hierarquia, pois main está dentro de body) e section */
+body main, section{
+    padding: 20px;
+}
 
-		.footer-list img {
-			margin-top: 3.5px;
-			width: 24px;
-			height: 24px;
-		}
+/* Configurações do Cabeçalho */
+header {
+    display: flex; /* Usa o layout flexível para organizar os elementos do cabeçalho */
+    justify-content: space-between; /* Coloca os itens do cabeçalho o mais distante possível entre si */
+    align-items: center; /* Alinha verticalmente os itens do cabeçalho no centro */
+    padding: 20px; /* Adiciona 20px de padding acima e abaixo */
+    background-color: #F5F5F5; /* Define a cor do fundo do cabeçalho */
+}
 
-		.footer-list img:hover {
-			transform: scale(1.2);
-		}
-		
-		#footer-content {
-			/* Com "#" na frente, define um id */
-			display: flex; /* Organiza os blocos no rodapé em um layout flexível */
-			justify-content: space-between; /* Espaço entre os blocos */
-			align-items: flex-start; /* Alinhamento dos blocos no topo */
-			padding: 20px; /* Espaçamento interno, opcional */
-		}
-		
-		#footer-nav, #footer-contato, #footer-redes-sociais {
-			/* Com vírgula, é usado quando você quer aplicar o mesmo estilo a múltiplos elementos diferentes*/
-			flex: 1; /* Faz com que cada bloco ocupe espaço igual */
-			margin: 0 20px; /* Espaçamento entre os blocos */
-		}
-		
-		a{
-			color:white /*  Altera a cor */
-		}
-		
-		#copyright{
-			text-align: center; /* Alinha os textos de copyright */
-		}
-		
-		a{
-			text-decoration: none; /* Remove o sublinhado de todos os links */
-		}
-		
-		/*Botão de Buscar*/
-		button{
-			border: 1px solid; /* Adiciona uma borda ao botão */
-			border-radius: 5px; /* Arredonda os cantos do botão */
-			background-color: white; /* Define a cor de fundo do botão como branco */
-		}
-		button:hover{
-			color: #FF8C00; /* Muda a cor do texto do botão para laranja escuro quando o mouse passa por cima */
-		}
-		
-		a:hover{
-			color: #FF8C00; /* Muda a cor do texto dos links para laranja escuro quando o mouse passa por cima */
-		}
+/* Logo "Site do Zero" */
+img{
+    width: 110px; /* Ajusta a largura da imagem da logo */
+    height: 110px; /* Ajusta a altura da imagem da logo */
+}
+
+/* Barra de navegação */
+nav a {
+    /* Sem vírgula, pega os elementos de "a" dentro de "nav" (hierarquia) */
+    margin: 0 15px; /* Adiciona 15px de margem à esquerda e à direita de cada link */
+    text-decoration: none; /* Remove o sublinhado dos links */
+    color: #2F4F4F; /* Define a cor do texto dos links*/
+    font-size: 18px; /* Define o tamanho da fonte dos links*/
+}
+
+/* Links com hover */
+nav a:hover {
+    color: #FF8C00; /* Muda a cor do link quando o mouse passa por cima */
+}
+
+/* Redes sociais no cabeçalho */
+.redes-sociais ul {
+    /* Com "." na frente, define uma classe */
+    list-style: none; /* Remove os marcadores de lista (bullets) */
+    display: flex; /* Alinha os itens da lista horizontalmente */
+}
+
+/* Redes sociais no cabeçalho */
+.redes-sociais ul li {
+    margin-left: 15px; /* Adiciona 15px de margem à esquerda de cada item da lista */
+}
+
+/* Ícones das redes sociais no cabeçalho */
+.redes-sociais ul li a img {
+    width: 30px; /* Largura dos ícones das redes sociais */
+    height: 30px; /* Altura dos ícones das redes sociais */
+}
+
+/*Barra de Pesquisa*/
+input {
+    border: 1px solid; /* Adiciona uma borda ao redor do campo de entrada */
+    border-radius: 5px; /* Arredonda os cantos do campo de entrada */
+}
+
+/*Botão de Buscar*/
+button{
+    border: 1px solid; /* Adiciona uma borda ao botão */
+    border-radius: 5px; /* Arredonda os cantos do botão */
+    background-color: white; /* Define a cor de fundo do botão como branco */
+}
+
+/* Botões de pesquisa e adquira já */
+button:hover{
+    color: #FF8C00; /* Muda a cor do texto do botão para laranja escuro quando o mouse passa por cima */
+}
+
+/* Fim do cabeçalho*/
+
+
+
+
+
+
+/* Imagens do frete, garantia e suporte */
+.aux-textos img{
+    background-color: rgb(62, 90, 69);
+    width: 30px;
+    height: 30px;
+}
+
+/* Sessão de recursos de produto */
+.sessao-recursos {
+    text-align: center; /* Centraliza o texto do título (h2) dentro da seção */
+    padding: 20px; /* Adiciona um espaçamento interno ao redor da seção */
+}
+
+.conteiner-recursos {
+    display: flex; /* Define o contêiner como um flexbox para organizar os itens em linha */
+    justify-content: center; /* Alinha os itens horizontalmente no centro do contêiner */
+    align-items: center; /* Alinha os itens verticalmente no centro do contêiner */
+    gap: 20px; /* Adiciona um espaço de 20px entre cada coluna (itens flex) */
+}
+
+.lista-recursos {
+    flex: 1; /* Faz com que cada coluna ocupe a mesma quantidade de espaço, tornando-as da mesma largura */
+}
+
+/* Aparência da imagem central da Mochila */
+.img-produto-recursos {
+    max-width: 100%; /* Garante que a imagem não ultrapasse a largura do contêiner */
+    width:500px; /* Altura imagem */
+    height: 500px; /* Largura da imagem */
+    display: block; /* Alinha a imagem como um bloco (sem inline spacing) */
+    margin: 0 auto; /* Centraliza a imagem horizontalmente */
+}
+
+/* Aparência dos ícones "✔", além de espaçamento entre os itens */
+.features {
+    display: flex; /* Define um contêiner flex para alinhar o ícone e o texto em linha */
+    align-items: flex-start; /* Alinha os itens no início do eixo transversal (vertical) */
+    margin-bottom: 15px; /* Adiciona um espaçamento inferior entre cada item da lista */
+}
+
+.feature-icone {
+    background-color: orange; /* Define a cor de fundo laranja para o ícone */
+    color: white; /* Define a cor do texto do ícone como branco */
+    border-radius: 50%; /* Faz o fundo do ícone ser um círculo */
+    padding: 10px; /* Adiciona um espaçamento interno ao redor do ícone */
+    display: flex; /* Define como flex para centralizar o conteúdo dentro do círculo */
+    justify-content: center; /* Centraliza horizontalmente o conteúdo do ícone */
+    align-items: center; /* Centraliza verticalmente o conteúdo do ícone */
+    margin-right: 10px; /* Adiciona um espaçamento à direita do ícone */
+}
+
+.feature-texto {
+    flex: 1; /* Faz com que o texto ocupe todo o espaço restante dentro do item flex */
+}
+
+/* Títulos presentes na Lista de Recursos */
+.titulo {
+    font-weight: bold; /* Define o título como negrito */
+    font-size: 1.2em; /* Aumenta o tamanho da fonte em 20% em relação ao tamanho padrão */
+}
+
+/* Descrição presente na lista de recursos */
+.descricao {
+    font-size: 0.9em; /* Reduz o tamanho da fonte para 90% do tamanho padrão */
+    color: #555; /* Define a cor do texto como um cinza escuro */
+}
+
+
+/* Aparência na sessão de recomendações */
+.recomendacao{
+    background-color: #ffeded;
+}
+
+
+
+
+
+
+
+
+
+/* Início do rodapé */
+footer {
+    color:white; /* Define a cor do texto no rodapé */
+    background-color: rgb(62, 90, 69); /* Define a cor de fundo do rodapé */
+}
+
+/* Aparência das listas */
+.footer-list{
+    list-style: none; /* Altera os marcadores de lista */
+    padding: 0; /* Altera o padding (espaço interno) da lista */
+    margin: 0; /* Altera a margem da lista */
+}
+
+/* Aparência dos Ícones */
+.footer-list li a img{
+    width:30px;
+    height:30px;
+}
+
+/* Organização dos conteúdos no rodapé */
+#footer-content {
+    /* Com "#" na frente, define um id */
+    display: flex; /* Organiza os blocos no rodapé em um layout flexível */
+    justify-content: space-between; /* Espaço entre os blocos */
+    align-items: flex-start; /* Alinhamento dos blocos no topo */
+    padding: 20px; /* Espaçamento interno, opcional */
+}
+
+/* Aparência de cada conteúdo do cabeçalho */
+#footer-nav, #footer-contato, #footer-redes-sociais {
+    /* Com vírgula, é usado quando você quer aplicar o mesmo estilo a múltiplos elementos diferentes */
+    flex: 1; /* Faz com que cada bloco ocupe espaço igual */
+    margin: 0 30px; /* Espaçamento entre os blocos */
+}
+
+/* Cor dos Links */
+a{
+    color:white /*  Altera a cor */
+}
+
+/* Parte dos copyright */
+#copyright{
+    text-align: center; /* Alinha os textos de copyright */
+}
+
+/* Aparência dos Links */
+a{
+    text-decoration: none; /* Remove o sublinhado de todos os links */
+}
+
+/* Botões de navegação no rodapé */
+a:hover{
+    color: #FF8C00; /* Muda a cor do texto dos links para laranja escuro quando o mouse passa por cima */
+}
+/* Fim do radapé */
