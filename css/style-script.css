@@ -301,6 +301,7 @@ footer {
 
 /* Organização dos conteúdos no rodapé */
 #footer-content {
+    text-align:center;
     /* Com "#" na frente, define um id */
     display: flex; /* Organiza os blocos no rodapé em um layout flexível */
     justify-content: space-between; /* Espaço entre os blocos */
